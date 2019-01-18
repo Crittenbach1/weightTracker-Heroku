@@ -1,7 +1,6 @@
 {
   "name": "weighttracker",
   "version": "1.0.0",
-  "version": "1.0.0",
   "engines": {
     "node": "6.3.1"
   },
@@ -17,5 +16,10 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^7.2.1",
+    "ajv": "^6.7.0",
+    "date-fns": "^1.30.1"
+  }
 }
