@@ -14,6 +14,8 @@ gem 'pry'
 
 gem 'foreman'
 
+gem 'rack-timeout', '0.3.2'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
