@@ -83,3 +83,4 @@ production:
   database: weightTracker_production
   username: weightTracker
   password: <%= ENV['WEIGHTTRACKER_DATABASE_PASSWORD'] %>
+  host: localhost
