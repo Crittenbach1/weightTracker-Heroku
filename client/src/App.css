@@ -1,8 +1,7 @@
 .App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  margin: 0 auto;
+  background-color: #2096f3;
+  height: 1000px;
+  width: 100%;
 }
 
 .App-logo {
@@ -10,16 +9,6 @@
   height: 40vmin;
 }
 
-.App-header {
-  background-color: #282c34;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -40,9 +29,11 @@
   width: 800px;
   display: inline-block;
   text-align: left;
+  margin-top: 10px;
 }
 
 #newWeight {
+  width: 100%;
   text-align: center;
   background-color: #2096f3;
   min-height: 400px;
@@ -52,6 +43,7 @@
 .chart {
   display: inline-block;
   padding-bottom: 100px;
+  width: 842px;
 }
 
 .isa_error {
@@ -59,13 +51,81 @@
     background-color: #FFD2D2;
 }
 
-#button {
-  margin: 15px;
-  background-color: #2096f3;
+#button1{
+  size: auto;
+  margin: 3px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #003f7a;
 }
 
+#button2{
+  size: auto;
+  margin: 3px;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  display: inline-block;
+  background-color: #003f7a;
+
+}
+
+#button3{
+  size: auto;
+  margin: 3px;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  background-color: #003f7a;
+}
 
 #saveButtonDiv {
   height: 37px;
   background-color: #3a7bf6;
+}
+
+@media screen and (max-width:800px) {
+
+    #button1{
+      size: auto;
+      margin: 3px;
+      margin-right: 10px;
+      background-color: #003f7a;
+    }
+
+    #button2{
+      size: auto;
+      margin: 3px;
+      margin-right: 10px;
+      display: inline-block;
+      background-color: #003f7a;
+
+    }
+
+    #button3{
+      size: auto;
+      margin: 3px;
+      margin-right: 10px;
+      background-color: #003f7a;
+    }
+
+
+
+    #saveButtonDiv{
+      width: 100%;
+    }
+
+    #newWeight{
+      width: 100%;
+      text-align: center;
+    }
+
+    #people_form {
+      width: 80%;
+    }
+
+    .chart {
+      width: 90%;
+    }
+
 }

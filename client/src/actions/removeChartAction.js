@@ -3,8 +3,8 @@ import fetch from 'isomorphic-fetch';
 export function removeChart(rec) {
   debugger
   return function(dispatch){
-    var url = `https://localhost:3001/api/v1/charts/${rec}`;
-    return fetch(url, {
+    return fetch(`/api/v1/charts/${rec}`, {
+      credentials: "include",
       method: 'DELETE',
       headers: {
         'Accept': "application/json",

@@ -4,9 +4,14 @@ export function fetchCharts() {
     debugger
   return function(dispatch){
     dispatch({type: 'LOADING'})
-    var url = 'https://localhost:3001/api/v1/charts.json';
-    var req = new Request(url);
-    return fetch(req)
+    return fetch('/api/v1/charts.json', {
+      credentials: "include",
+      method: 'GET',
+      headers: {
+        'Accept': "application/json",
+        'Content-Type': "application/json",
+      },
+    })
     .then(function(response) {
       return response.json()
     })

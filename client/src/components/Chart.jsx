@@ -168,7 +168,7 @@ class Chart extends Component {
 
 
     return (
-      <div className="chart" style={{height: "auto", width: 840 + "px"}}>
+      <div className="chart">
         {this.state.error}
 
         {chart}

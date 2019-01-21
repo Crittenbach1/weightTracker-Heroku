@@ -172,14 +172,14 @@ class NewChartData extends Component {
     return (
       <div id="newWeight">
 
-         <div id="people_form">
+        { this.state.error ? <Error message={this.state.error} /> : null }
+        <Button id="button1" variant="contained" color="primary" onClick={this.removePerson}>Remove Person</Button>
+        <Button id="button1" variant="contained" color="primary" onClick={this.addPerson}>Add Person</Button>
+        <Button id="button2" variant="contained" color="primary" onClick={this.saveData} >Chart Data</Button>
+        <Button id="button3" variant="contained" color="primary" onClick={this.handleAddWeight}>Add Weight</Button>
+        <Button id="button3" variant="contained" color="primary" onClick={this.handleRemoveWeight}>Remove Weight</Button>
 
-          { this.state.error ? <Error message={this.state.error} /> : null }
-          <Button id="button" variant="contained" color="primary" onClick={this.removePerson}>Remove Person</Button>
-          <Button id="button" variant="contained" color="primary" onClick={this.addPerson}>Add Person</Button>
-          <Button id="button" variant="contained" color="primary" onClick={this.saveData} >Chart Data</Button>
-          <Button id="button" variant="contained" color="primary" onClick={this.handleAddWeight}>Add Weight</Button>
-          <Button id="button" variant="contained" color="primary" onClick={this.handleRemoveWeight}>Remove Weight</Button>
+         <div id="people_form">
 
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
              <div className="picker">
