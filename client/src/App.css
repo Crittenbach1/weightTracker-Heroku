@@ -2,6 +2,7 @@
   background-color: #2096f3;
   height: 1000px;
   width: 100%;
+  text-align: center;
 }
 
 .App-logo {
@@ -82,6 +83,11 @@
 #saveButtonDiv {
   height: 37px;
   background-color: #3a7bf6;
+}
+
+.bike {
+  height: 30%;
+  margin: -70px;
 }
 
 @media screen and (max-width:800px) {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchCharts } from './actions/fetchChartsAction.js'
 import NewChartData from './containers/NewChartData.js';
+import bike from './vectors/bike.svg';
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
@@ -27,7 +28,9 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
+
         <div className="App">
+        <img src={bike} className="bike" alt="bike" />
             <NewChartData className="newChartData" />
         </div>
       </MuiThemeProvider>
